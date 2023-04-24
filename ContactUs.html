@@ -1,0 +1,111 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Tung Bao Thach
+ID: s3929174
+Acknowledgement: Acknowledge the resources that you use here. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Contact Us</title>
+</head>
+<body>
+      <!-- Header (Logo and Navigation bar) -->
+    <div class="mobile-nav-icon">☰</div> 
+    <nav class="navbar">
+        <img class="logo" src="logo.png" alt="Logo">
+        <ul>
+            <li class="dropdown"><a href="index.html"><button class="dropbtn">Home Page</button></a>
+            
+            <li class="dropdown"><a href="#"></a>
+                <button class="dropbtn">Category</button>
+                <div class="dropdown-content">
+                    <a href="Category1.html">Fiction</a>
+                    <a href="Category2.html">Childrens</a>
+                    <a href="Category3.html">History</a>    
+                
+             <li class="dropdown"><a href="ContactUs.html"><button class="dropbtn">Contact Us</button></a></li>
+                
+        </ul> 
+    </nav> 
+     <br>
+     <hr width="100%"
+         color="white"
+         size="2px">
+     <br>
+     <form>
+        <h2>Contact Us</h2>
+        <div class="contact-page">
+            <fieldset>
+                <label for="Contact purpose"> Contact purpose</label>
+                    <select name="Contact_purpose" id="Contact_purpose">
+                        <option class="options">I want to sell books</option>
+                        <option class="options">I want to buy books</option>
+                    </select>
+                    <br>
+                    <br>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone</label><br>
+            <input required id="phone" type="number" name="phone" pattern="[0-9]{9,13}" title="Enter 9 to 13 digits">
+            <br>
+            <br>
+            <label for="option">Preferred contact method</label>
+            <br>
+            <input type="checkbox" id="contact_phone" name="contact_method" value="phone">
+            <label for="contact_phone">By Phone</label>
+            <br>
+            <input type="checkbox" id="contact_email" name="contact_method" value="email">
+            <label for="contact_email">By Email</label>
+            </fieldset>
+            <label>Do you want to recieve our weekly newsletter:</label>
+            <label class="container-1">Yes
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+            </label>
+            <label class="container-1">No
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+            </label>
+            <label for="message">Message</label>
+            <br>
+            <input type="textarea" id="message" name="message"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            </div>
+          </form>
+        <br>
+        <hr width="100%"
+         color="white"
+         size="2px">
+        <br>
+          <!-- Footer -->
+    <footer>
+        <div>
+            <nav class="navbarf">
+                <img class="logof" src="logo.png" alt="Logo" > 
+                <ul>
+                    <li class="dropdown"><a href="#"><button class="dropbtn">About Us</button></a></li>
+                    
+                    <li class="dropdown"><a href="#"><button class="dropbtn">Privacy Policy</button></a></li>
+                        
+                    <li class="dropdown"><a href="#"><button class="dropbtn">Terms</button></a></li>
+                        
+                    <li class="dropdown"><a href="#"><button class="dropbtn">Copyright </button></a></li>
+                
+                    <li class="dropdown"><a href="ContactUs.html"><button class="dropbtn">Contact Us</button></a></li>
+                    
+                </ul> 
+            </nav>
+        </div>
+</footer>
+</body>
+</html>
